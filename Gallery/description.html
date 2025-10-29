@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Description</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      padding: 2rem;
+      text-align: center;
+    }
+    img {
+      max-width: 90%;
+      border-radius: 15px;
+      margin-bottom: 1.5rem;
+    }
+    a {
+      color: #ff5f5f;
+      text-decoration: none;
+      margin-top: 1rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">Image Title</h1>
+  <img id="image" src="" alt="">
+  <p id="desc"></p>
+  <a href="index.html">Back to Gallery</a>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const imageSrc = params.get('image');
+    const title = params.get('title');
+
+    document.getElementById('title').textContent = title;
+    document.getElementById('image').src = imageSrc;
+    document.getElementById('desc').textContent = `This is a detailed description of "${title}". It highlights the mood, texture, and story behind the scene.`;
+  </script>
+</body>
+</html>

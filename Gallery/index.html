@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elegant Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Elegant Image Gallery</h1>
+  <div class="gallery">
+    <div class="card" onclick="openModal('https://picsum.photos/id/1018/600/400', 'Nature Landscape')">
+      <img src="https://picsum.photos/id/1018/600/400" alt="Nature">
+    </div>
+    <div class="card" onclick="openModal('https://picsum.photos/id/1015/600/400', 'Urban Vibes')">
+      <img src="https://picsum.photos/id/1015/600/400" alt="City">
+    </div>
+    <div class="card" onclick="openModal('https://picsum.photos/id/1016/600/400', 'Ocean Waves')">
+      <img src="https://picsum.photos/id/1016/600/400" alt="Ocean">
+    </div>
+    <div class="card" onclick="openModal('https://picsum.photos/id/1025/600/400', 'Majestic Eagle')">
+      <img src="https://picsum.photos/id/1025/600/400" alt="Eagle">
+    </div>
+    <div class="card" onclick="openModal('https://picsum.photos/id/1020/600/400', 'Mountain Escape')">
+      <img src="https://picsum.photos/id/1020/600/400" alt="Mountains">
+    </div>
+    <div class="card" onclick="openModal('https://picsum.photos/id/1033/600/400', 'Forest Path')">
+      <img src="https://picsum.photos/id/1033/600/400" alt="Forest">
+    </div>
+    <div class="card" onclick="openModal('https://picsum.photos/id/1035/600/400', 'Golden Desert')">
+      <img src="https://picsum.photos/id/1035/600/400" alt="Desert">
+    </div>
+    <div class="card" onclick="openModal('https://picsum.photos/id/1040/600/400', 'Calm Lake')">
+      <img src="https://picsum.photos/id/1040/600/400" alt="Lake">
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="imageModal">
+    <div class="modal-content">
+      <img id="modalImage" src="" alt="">
+      <h3 id="modalTitle"></h3>
+      <button class="close-btn" id="closeBtn">More Details</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
